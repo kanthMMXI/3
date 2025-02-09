@@ -10,8 +10,30 @@
     <div class="container">
         <h1>Welcome to the Translation Website</h1>
         <p>Click the button to start translating your text.</p>
+
+        <!-- Language selection -->
+        <label for="source-lang">Select Source Language:</label>
+        <select id="source-lang">
+            <option value="en">English</option>
+            <option value="it">Italian</option>
+            <option value="es">Spanish</option>
+            <!-- Add other languages here -->
+        </select>
+
+        <label for="target-lang">Select Target Language:</label>
+        <select id="target-lang">
+            <option value="en">English</option>
+            <option value="it">Italian</option>
+            <option value="es">Spanish</option>
+            <!-- Add other languages here -->
+        </select>
+
+        <label for="text-to-translate">Enter Text to Translate:</label>
+        <textarea id="text-to-translate" rows="4" cols="50"></textarea>
+
         <button onclick="startTranslation()">Start Translation</button>
     </div>
+
     <script src="app.js"></script> <!-- Link to JavaScript -->
 </body>
 </html>
